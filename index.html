@@ -6,11 +6,10 @@
     <title>Unity WebGL Player | PlanetanyaGame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=900 height=1000></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/PlanetanyaGameBuild4.loader.js";
+      var loaderUrl = buildUrl + "/PlanetanyaGameBuild5.loader.js";
       var config = {
-        dataUrl: buildUrl + "/PlanetanyaGameBuild4.data",
-        frameworkUrl: buildUrl + "/PlanetanyaGameBuild4.framework.js",
-        codeUrl: buildUrl + "/PlanetanyaGameBuild4.wasm",
+        dataUrl: buildUrl + "/PlanetanyaGameBuild5.data",
+        frameworkUrl: buildUrl + "/PlanetanyaGameBuild5.framework.js",
+        codeUrl: buildUrl + "/PlanetanyaGameBuild5.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "PlanetanyaGame",
@@ -94,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "100%";
-        canvas.style.height = "99%";
+        canvas.style.width = "900px";
+        canvas.style.height = "1000px";
       }
 
       loadingBar.style.display = "block";
